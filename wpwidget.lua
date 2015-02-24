@@ -65,6 +65,7 @@ function wpwidget.setRandomWallpapers()
         table.insert(wpwidget.current_wps, {screen=s,file=wp})
         gears.wallpaper.maximized(wpwidget.current_theme.path .. wp, s, false)
     end
+    wpwidget.updateTooltip()
 end
 
 function wpwidget.setTimer()
